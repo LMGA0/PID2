@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use App\Models\Types;
+use App\Models\Type;
 
 class TypeSeeder extends Seeder
 {
@@ -16,7 +16,7 @@ class TypeSeeder extends Seeder
     public function run()
     {
                 //Empty the table first
-                Types::truncate();
+                Type::truncate();
         
                 //Define data
                $types = [
