@@ -15,7 +15,7 @@ class CreateTypesTable extends Migration
     {
         Schema::create('types', function (Blueprint $table) {
             $table->id();
-            $table->string('type')->lenght(60);
+            $table->string('type', 60);
         });
     }
 
