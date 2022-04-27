@@ -8,6 +8,7 @@ use Illuminate\Support\Str;
 use App\Models\Location;
 use App\Models\Locality;
 
+
 class LocationSeeder extends Seeder
 {
     /**
@@ -18,7 +19,9 @@ class LocationSeeder extends Seeder
     public function run()
     {
         //Empty the table first
+        DB::statement('SET FOREIGN_KEY_CHECKS=0');
         Location::truncate();
+        DB::statement('SET FOREIGN_KEY_CHECKS=1');
 
         //Define the data
         $locations=[
