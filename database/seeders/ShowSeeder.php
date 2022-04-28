@@ -26,7 +26,7 @@ class ShowSeeder extends Seeder
                 'slug'=>null, 
                 'title'=>'Ayiti',
                 'description'=> "Un homme est bloqué à l\'aéroport. \n "
-                    .'Questionné par les douaniers...' ,
+                .'Questionné par les douaniers...' ,
                 'poster_url'=>'ayiti.jpg',
                 'location_slug'=>'espace-delvaux-la-venerie',
                 'bookable'=>true,
@@ -71,7 +71,6 @@ class ShowSeeder extends Seeder
             $data['slug'] = Str::slug($data['title'],'-');
             $data['location_id'] = $location->id ?? null;
         }
-
         unset($data);
 
         //Insert data in the table
