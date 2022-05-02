@@ -32,12 +32,6 @@
     </ul>
 </article>
 
-    <ul>
-        @foreach($locality->locations as $locations)
-        <li>{{$locations->designation}}</li>
-        @endforeach
-    </ul>
-
     <nav><a href="{{ route('location_index') }}">Retour à l'index</a></nav>
 @endsection
 

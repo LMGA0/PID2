@@ -42,7 +42,7 @@ class Location extends Model
      */
     public function locality()
     {
-      return $this->belongsTo('Locality::class');
+      return $this->belongsTo(Locality::class);
     }
 
     /**
@@ -50,7 +50,15 @@ class Location extends Model
      */
     public function shows()
     {
-      return $this->hasMany('Show::class');
+      return $this->hasMany(Show::class);
+    }
+
+    /**
+     * Get the representation in this location
+     */
+    public function representation()
+    {
+      return $this->hasMany(Representation::class);
     }
 
 }

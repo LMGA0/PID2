@@ -44,5 +44,13 @@ class Show extends Model
    {
        return $this->belongsTo(Location::class);
    } 
+
+   /**
+     * Get the representation of this show
+     */
+    public function representation()
+    {
+      return $this->hasMany(Representation::class);
+    }
 }
 
