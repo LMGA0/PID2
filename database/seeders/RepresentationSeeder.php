@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Illumimate\Support\Facade\DB;
+use Illuminate\Support\Facades\DB;
 use App\Models\Representation;
 use App\Models\Location;
 use App\Models\Show;
@@ -19,11 +19,11 @@ class RepresentationSeeder extends Seeder
     {
         //Empty the table first
         DB::statement('SET FOREIGN_KEY_CHECKS=0');
-        Representations::truncate();
-        BD::statement('SET FOREIGN_KEY_CHECKS=1');
+        Representation::truncate();
+        DB::statement('SET FOREIGN_KEY_CHECKS=1');
 
         //Define data
-        $representations = [
+        $representations=[
             [
              'location_slug' => 'espace-delvaux-la-venerie',
              'show_slug' => 'ayiti', 
@@ -53,7 +53,7 @@ class RepresentationSeeder extends Seeder
             unset($data['location_slug']);
 
             //Search the show for a given show's slug
-            $show = Show::firstWhere('slug', $data['show-slug']);
+            $show=Show::firstWhere('slug',$data['show_slug']);
             unset($data['show_slug']);
 
             $data['location_id'] = $location->id ?? null;
