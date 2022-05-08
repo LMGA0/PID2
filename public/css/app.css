@@ -726,6 +726,12 @@ select {
 .-mr-0 {
   margin-right: -0px;
 }
+<<<<<<< HEAD
+=======
+.mr-4 {
+  margin-right: 1rem;
+}
+>>>>>>> 244b7c09426089db9a317509c6bb82376acc0b74
 .mr-6 {
   margin-right: 1.5rem;
 }
@@ -1055,6 +1061,7 @@ select {
 .pr-4 {
   padding-right: 1rem;
 }
+<<<<<<< HEAD
 .pt-2 {
   padding-top: 0.5rem;
 }
@@ -1067,6 +1074,8 @@ select {
 .pb-1 {
   padding-bottom: 0.25rem;
 }
+=======
+>>>>>>> 244b7c09426089db9a317509c6bb82376acc0b74
 .text-left {
   text-align: left;
 }
@@ -1322,6 +1331,13 @@ select {
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
 }
+<<<<<<< HEAD
+=======
+.hover\:text-red-600:hover {
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity));
+}
+>>>>>>> 244b7c09426089db9a317509c6bb82376acc0b74
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1330,10 +1346,13 @@ select {
   --tw-text-opacity: 1;
   color: rgb(20 184 166 / var(--tw-text-opacity));
 }
+<<<<<<< HEAD
 .hover\:text-red-600:hover {
   --tw-text-opacity: 1;
   color: rgb(220 38 38 / var(--tw-text-opacity));
 }
+=======
+>>>>>>> 244b7c09426089db9a317509c6bb82376acc0b74
 .focus\:z-10:focus {
   z-index: 10;
 }
