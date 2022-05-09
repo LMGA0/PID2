@@ -17,8 +17,8 @@ let x = [2.3,4]
 <template>
     <Head title="Homepage" />
 
-  <h1 v-if="username">You are connected: {{username}}</h1>
-  <h1 v-else>YOU ARE NOT CONNECTED</h1>
+  <h1 v-if="username">Welcome {{username}}!</h1>
+  <h1 v-else>You are not connected.</h1>
     <ul>
 
             <li v-for="show in shows">
