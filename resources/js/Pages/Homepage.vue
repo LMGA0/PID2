@@ -1,13 +1,19 @@
 <script>
+import axios from 'axios'
 import Layout from "../Shared/Layout.vue"
+import CarouselExternalApi from "../Components/CarouselExternalApi.vue"
 
 export default {
+  components:{
+    CarouselExternalApi
+  },
+
   layout: Layout,
 
   computed: {
     username() {
       return this.$page.props.auth?.user?.name;
-    }
+    },
   }
 }
 
@@ -16,18 +22,7 @@ let x = [2.3,4]
 
 <template>
     <Head title="Homepage" />
-
-  <h1 v-if="username">Welcome {{username}}!</h1>
-  <h1 v-else>You are not connected.</h1>
-    <ul>
-
-            <li v-for="show in shows">
-                {{show.title}}
-
-            </li>
-    </ul>
-
-
+    <CarouselExternalApi />
 
 </template>
 
