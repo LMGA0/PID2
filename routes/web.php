@@ -24,6 +24,10 @@ Route::get('/homepage', function () {
     return inertia('Homepage');
 });
 
+Route::get('/representation_bis', function () {
+    return inertia('Representation_bis');
+});
+
 Route::get('/shop', function () {
     return inertia('Shop');
 });
