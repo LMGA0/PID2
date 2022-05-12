@@ -1,5 +1,5 @@
 <template>
- <nav class="flex items-center justify-between flex-wrap bg-red-700 p-4">
+ <nav class="flex items-center justify-between flex-wrap bg-red-700 p-4 rounded-b-[14px]">
   <div class="flex items-center flex-shrink-0 text-white mr-6">
 
     <a href="/homepage" :active="$page.component === 'Homepage'"><ApplicationLogo class="w-10 mr-3" /></a>
