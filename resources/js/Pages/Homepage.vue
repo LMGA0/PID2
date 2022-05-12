@@ -17,6 +17,7 @@ let x = [2.3,4]
 <template>
     <Head title="Homepage" />
 
+  <p>Bienvenue sur le site de partage d'informations sur les actualités théatrales.</p>
   <h1 v-if="username">You are connected: {{username}}</h1>
   <h1 v-else>YOU ARE NOT CONNECTED</h1>
     <ul>
