@@ -668,9 +668,6 @@ select {
 .z-40 {
   z-index: 40;
 }
-.float-left {
-  float: left;
-}
 .m-0 {
   margin: 0px;
 }
@@ -765,9 +762,6 @@ select {
 .grid {
   display: grid;
 }
-.contents {
-  display: contents;
-}
 .hidden {
   display: none;
 }
@@ -797,9 +791,6 @@ select {
 }
 .h-3 {
   height: 0.75rem;
-}
-.h-screen {
-  height: 100vh;
 }
 .min-h-screen {
   min-height: 100vh;
@@ -895,9 +886,6 @@ select {
 .flex-wrap {
   flex-wrap: wrap;
 }
-.place-items-center {
-  place-items: center;
-}
 .items-center {
   align-items: center;
 }
@@ -919,9 +907,6 @@ select {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
-}
-.self-center {
-  align-self: center;
 }
 .overflow-hidden {
   overflow: hidden;
@@ -946,9 +931,6 @@ select {
 }
 .border {
   border-width: 1px;
-}
-.border-0 {
-  border-width: 0px;
 }
 .border-t {
   border-top-width: 1px;
@@ -1016,15 +998,12 @@ select {
   --tw-bg-opacity: 1;
   background-color: rgb(185 28 28 / var(--tw-bg-opacity));
 }
-.bg-no-repeat {
-  background-repeat: no-repeat;
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 .fill-current {
   fill: currentColor;
-}
-.object-center {
-  -o-object-position: center;
-     object-position: center;
 }
 .p-6 {
   padding: 1.5rem;
@@ -1340,6 +1319,10 @@ select {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.hover\:bg-blue-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
 .hover\:text-gray-500:hover {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
@@ -1371,14 +1354,6 @@ select {
 .hover\:text-teal-500:hover {
   --tw-text-opacity: 1;
   color: rgb(20 184 166 / var(--tw-text-opacity));
-}
-.hover\:no-underline:hover {
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
-}
-.hover\:outline-none:hover {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
 }
 .focus\:z-10:focus {
   z-index: 10;
@@ -1430,10 +1405,6 @@ select {
 .focus\:text-gray-800:focus {
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
-}
-.focus\:no-underline:focus {
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
 }
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
@@ -1583,10 +1554,6 @@ select {
   }
 }
 @media (min-width: 768px) {
-
-  .md\:block {
-    display: block;
-  }
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));

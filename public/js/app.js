@@ -20548,14 +20548,29 @@ var _withScopeId = function _withScopeId(n) {
 };
 
 var _hoisted_1 = {
+  key: 0,
+  href: "https://cors-anywhere.herokuapp.com/corsdemo",
+  target: "_blank"
+};
+
+var _hoisted_2 = /*#__PURE__*/_withScopeId(function () {
+  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    "class": "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+  }, " Click here if the connection to the api is blocked ", -1
+  /* HOISTED */
+  );
+});
+
+var _hoisted_3 = [_hoisted_2];
+var _hoisted_4 = {
   "class": "carousel"
 };
-var _hoisted_2 = {
+var _hoisted_5 = {
   key: 0,
   "class": "carousel-inner"
 };
 
-var _hoisted_3 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_6 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     "class": "carousel-open",
     type: "radio",
@@ -20564,24 +20579,6 @@ var _hoisted_3 = /*#__PURE__*/_withScopeId(function () {
     "aria-hidden": "true",
     hidden: "",
     checked: "checked"
-  }, null, -1
-  /* HOISTED */
-  );
-});
-
-var _hoisted_4 = {
-  "class": "carousel-item"
-};
-var _hoisted_5 = ["src"];
-
-var _hoisted_6 = /*#__PURE__*/_withScopeId(function () {
-  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
-    "class": "carousel-open",
-    type: "radio",
-    id: "carousel-2",
-    name: "carousel",
-    "aria-hidden": "true",
-    hidden: ""
   }, null, -1
   /* HOISTED */
   );
@@ -20596,7 +20593,7 @@ var _hoisted_9 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     "class": "carousel-open",
     type: "radio",
-    id: "carousel-3",
+    id: "carousel-2",
     name: "carousel",
     "aria-hidden": "true",
     hidden: ""
@@ -20610,28 +20607,48 @@ var _hoisted_10 = {
 };
 var _hoisted_11 = ["src"];
 
-var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<label for=\"carousel-3\" class=\"carousel-control prev control-1\" data-v-5eee8b54>‹</label><label for=\"carousel-2\" class=\"carousel-control next control-1\" data-v-5eee8b54>›</label><label for=\"carousel-1\" class=\"carousel-control prev control-2\" data-v-5eee8b54>‹</label><label for=\"carousel-3\" class=\"carousel-control next control-2\" data-v-5eee8b54>›</label><label for=\"carousel-2\" class=\"carousel-control prev control-3\" data-v-5eee8b54>‹</label><label for=\"carousel-1\" class=\"carousel-control next control-3\" data-v-5eee8b54>›</label>", 6);
+var _hoisted_12 = /*#__PURE__*/_withScopeId(function () {
+  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+    "class": "carousel-open",
+    type: "radio",
+    id: "carousel-3",
+    name: "carousel",
+    "aria-hidden": "true",
+    hidden: ""
+  }, null, -1
+  /* HOISTED */
+  );
+});
+
+var _hoisted_13 = {
+  "class": "carousel-item"
+};
+var _hoisted_14 = ["src"];
+
+var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<label for=\"carousel-3\" class=\"carousel-control prev control-1\" data-v-5eee8b54>‹</label><label for=\"carousel-2\" class=\"carousel-control next control-1\" data-v-5eee8b54>›</label><label for=\"carousel-1\" class=\"carousel-control prev control-2\" data-v-5eee8b54>‹</label><label for=\"carousel-3\" class=\"carousel-control next control-2\" data-v-5eee8b54>›</label><label for=\"carousel-2\" class=\"carousel-control prev control-3\" data-v-5eee8b54>‹</label><label for=\"carousel-1\" class=\"carousel-control next control-3\" data-v-5eee8b54>›</label>", 6);
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [this.spectaclesLoaded == true ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_2, [_hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(this.spectacles[0].title), 1
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [this.spectaclesLoaded == false ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("a", _hoisted_1, _hoisted_3)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [this.spectaclesLoaded == true ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_5, [_hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(this.spectacles[0].title), 1
   /* TEXT */
   ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
     src: this.spectacles[0].poster
   }, null, 8
   /* PROPS */
-  , _hoisted_5)]), _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(this.spectacles[1].title), 1
+  , _hoisted_8)]), _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(this.spectacles[1].title), 1
   /* TEXT */
   ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
     src: this.spectacles[1].poster
   }, null, 8
   /* PROPS */
-  , _hoisted_8)]), _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(this.spectacles[2].title), 1
+  , _hoisted_11)]), _hoisted_12, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(this.spectacles[2].title), 1
   /* TEXT */
   ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
     src: this.spectacles[2].poster
   }, null, 8
   /* PROPS */
-  , _hoisted_11)]), _hoisted_12])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]);
+  , _hoisted_14)]), _hoisted_15])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])], 64
+  /* STABLE_FRAGMENT */
+  );
 }
 
 /***/ }),

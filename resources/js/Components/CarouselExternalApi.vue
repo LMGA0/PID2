@@ -40,6 +40,15 @@ export default {
 </script>
 
 <template>
+
+<a v-if="this.spectaclesLoaded == false" href="https://cors-anywhere.herokuapp.com/corsdemo" target="_blank">
+<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+  Click here if the connection to the api is blocked
+</button>
+</a>
+
+
+
 <div class="carousel">
     <div v-if="this.spectaclesLoaded == true" class="carousel-inner">
         <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
