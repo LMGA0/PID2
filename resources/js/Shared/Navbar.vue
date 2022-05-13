@@ -3,7 +3,7 @@
   <div class="flex items-center flex-shrink-0 text-white mr-6">
 
     <a href="/homepage" :active="$page.component === 'Homepage'"><ApplicationLogo class="w-10 mr-3" /></a>
-    <span class="font-semibold text-xl tracking-tight">Projet d'intégration de développement</span>
+    <span class="font-semibold text-xl tracking-tight ml-5">Projet d'intégration de développement</span>
   </div>
 
   <div class="block lg:hidden">

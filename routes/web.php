@@ -20,9 +20,13 @@ use Inertia\Inertia;
 
 Route::redirect('/', '/homepage');
 
-Route::get('/homepage', function () {
-    return inertia('Homepage');
-});
+// Route::get('/homepage', function () {
+//     return inertia('Homepage');
+// });
+
+
+// Nouvelle methode avec controlleur (et donc recupération de données)
+Route::get('/homepage', [ShowController::class, 'indexVue'])->name('homepage_show');
 
 Route::get('/representation_bis', function () {
     return inertia('Representation_bis');

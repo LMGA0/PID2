@@ -15,7 +15,6 @@ export default {
 
     // Turnaround for the localhost block of the API
     corsWorkaround: 'https://cors-anywhere.herokuapp.com/',
-
     }
 
 
