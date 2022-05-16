@@ -13,11 +13,11 @@ class RepresentationController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function indexVue()
     {
         $representations = Representation::all();
 
-        return view('representation.index',[
+        return inertia('representation_bis',[
             'representations' => $representations,
             'resource' => 'représentations',
         ]);

@@ -3,7 +3,13 @@ import Layout from "../Shared/Layout.vue";
 
 export default {
   layout: Layout,
-};
+
+props: {
+    artists : Object,
+    resource : String
+}
+}   
+
 </script>
 <template>
     <Head title="Representation_bis" />
@@ -15,7 +21,7 @@ export default {
             <th>Firstname </th>
             <th>Lastname</th>
         </tr>
-      
+      TEST
         <li v-for="artist in artists">
             
             {{artist.firstname}}
