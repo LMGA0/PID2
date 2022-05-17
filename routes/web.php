@@ -24,7 +24,6 @@ Route::redirect('/', '/homepage');
 //     return inertia('Homepage');
 // });
 
-
 // Nouvelle methode avec controlleur (et donc recupération de données)
 Route::get('/homepage', [ShowController::class, 'indexVue'])->name('homepage_show');
 
@@ -73,6 +72,7 @@ Route::get('location/{id}', [LocationController::class, 'show'])
 	->where('id', '[0-9]+')->name('location_show');	
 
 Route::get('/show', [ShowController::class, 'index'])->name('show_index');
+
 Route::get('/show/{id}', [ShowController::class, 'show'])
 	->where('id', '[0-9]+')->name('show_show');	
 

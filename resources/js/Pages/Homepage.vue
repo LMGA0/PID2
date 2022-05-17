@@ -25,13 +25,10 @@ let x = [2.3,4]
 
 <template>
     <Head title="Homepage" />
-    <CarouselExternalApi />
+    <!-- <CarouselExternalApi /> -->
 
   <p>Bienvenue sur le site de partage d'informations sur les actualités théatrales.</p>
-  <h1 v-if="username">You are connected: {{username}}</h1>
-  <h1 v-else>YOU ARE NOT CONNECTED</h1>
 
-<!-- I do not know why this does not work -->
   <h1> {{ resource }} </h1> 
 
     <ul>

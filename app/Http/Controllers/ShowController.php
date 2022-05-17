@@ -27,7 +27,8 @@ class ShowController extends Controller
         $shows = Show::all();
 
         return inertia('Homepage',[
-        'shows' => $shows
+        'shows' => $shows,
+        'resource' => 'spectacles'
         ]);
     }
 
