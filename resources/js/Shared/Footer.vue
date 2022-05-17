@@ -1,5 +1,5 @@
 <template>
-  <v-footer padless>
+  <v-footer padless class="fixed bottom-0 left-0 w-full">
     <v-col
       class="text-white justify-center flex bg-red-700 p-4 "
       cols="12"
@@ -8,3 +8,6 @@
     </v-col>
   </v-footer>
 </template>
+
+<style scoped>
+</style>

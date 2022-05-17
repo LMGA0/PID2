@@ -2,29 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Artist;
-use App\Models\Representation;
-use Carbon\Carbon;
-
+use App\Events\ChatMessageEvent;
 use Illuminate\Http\Request;
 
-class RepresentationController extends Controller
+class ChatController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function indexVue()
+    public function index()
     {
-        $representations = Representation::all();
-        $artists = Artist::all();
-
-        return inertia('representation_bis',[
-            'representations' => $representations,
-            'artists' => $artists,
-            'resource' => 'représentations',
-        ]);
+        return view('chat.index');
     }
 
     /**
@@ -45,7 +35,14 @@ class RepresentationController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        event(new ChatMessageEvent(
+            $request->nickname,
+            $request->message 
+        ));
+
+        return response()->json([
+            'succes' => 'Chat message sent.'
+        ]);
     }
 
     /**
@@ -56,15 +53,7 @@ class RepresentationController extends Controller
      */
     public function show($id)
     {
-        $representation = Representation::find($id);
-        $date = Carbon::parse($representation->when)->format('d/m/Y');
-        $time = Carbon::parse($representation->when)->format('G:i');
-
-            return view('representation.show',[
-                'representation' => $representation,
-                'date' => $date,
-                'time' => $time,
-            ]);
+        //
     }
 
     /**

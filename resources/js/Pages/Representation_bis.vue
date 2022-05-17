@@ -22,6 +22,10 @@ props: {
             <th>Lastname</th>
         </tr>
       TEST
+        <li v-for="representation in representations">
+            
+            {{representation}}
+         </li>    
         <li v-for="artist in artists">
             
             {{artist.firstname}}
