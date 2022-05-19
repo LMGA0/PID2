@@ -44,8 +44,8 @@
 
       <NavLink href="/contact" :active="$page.component === 'Contact'">
       <span style="display:flex; align-items:center">
-                <!-- <ContactIcon /> -->
-                <MinichatIcon />
+                <img src="/contact.png" />
+                <!-- <MinichatIcon /> -->
                 Contact
             </span>
       </NavLink>
