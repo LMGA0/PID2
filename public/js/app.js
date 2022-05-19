@@ -24400,7 +24400,7 @@ var _hoisted_10 = {
   }
 };
 
-var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Page 2 ");
+var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Agenda ");
 
 var _hoisted_12 = {
   style: {
@@ -24409,7 +24409,7 @@ var _hoisted_12 = {
   }
 };
 
-var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Page 3 ");
+var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Infos ");
 
 var _hoisted_14 = {
   style: {
@@ -24418,14 +24418,32 @@ var _hoisted_14 = {
   }
 };
 
-var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Page 4 ");
+var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Minichat ");
 
 var _hoisted_16 = {
+  style: {
+    "display": "flex",
+    "align-items": "center"
+  }
+};
+
+var _hoisted_17 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Contact ");
+
+var _hoisted_18 = {
+  style: {
+    "display": "flex",
+    "align-items": "center"
+  }
+};
+
+var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Test ");
+
+var _hoisted_20 = {
   key: 0,
   href: "/login",
   "class": "inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
 };
-var _hoisted_17 = {
+var _hoisted_21 = {
   key: 1,
   "class": "text-white"
 };
@@ -24485,7 +24503,31 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
   }, 8
   /* PROPS */
-  , ["active"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [!_ctx.$page.props.auth.user ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("a", _hoisted_16, "Se connecter / S'inscrire")) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("p", _hoisted_17, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$page.props.auth.user.name), 1
+  , ["active"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["NavLink"], {
+    href: "/contact",
+    active: _ctx.$page.component === 'Contact'
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <ContactIcon /> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["MinichatIcon"]), _hoisted_17])];
+    }),
+    _: 1
+    /* STABLE */
+
+  }, 8
+  /* PROPS */
+  , ["active"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["NavLink"], {
+    href: "/test",
+    active: _ctx.$page.component === 'Test'
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_18, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <TestIcon /> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["MinichatIcon"]), _hoisted_19])];
+    }),
+    _: 1
+    /* STABLE */
+
+  }, 8
+  /* PROPS */
+  , ["active"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [!_ctx.$page.props.auth.user ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("a", _hoisted_20, "Se connecter / S'inscrire")) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("p", _hoisted_21, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$page.props.auth.user.name), 1
   /* TEXT */
   ))])])]);
 }

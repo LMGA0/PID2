@@ -24,21 +24,37 @@
       <NavLink href="/shop" :active="$page.component === 'Shop'">
       <span style="display:flex; align-items:center">
                 <ShopIcon />
-                Page 2
+                Agenda
             </span>
       </NavLink>
 
       <NavLink href="/news" :active="$page.component === 'News'">
       <span style="display:flex; align-items:center">
                 <NewsIcon />
-                Page 3
+                Infos
             </span>
       </NavLink>
 
       <NavLink href="/minichat" :active="$page.component === 'Minichat'">
       <span style="display:flex; align-items:center">
                 <MinichatIcon />
-                Page 4
+                Minichat
+            </span>
+      </NavLink>
+
+      <NavLink href="/contact" :active="$page.component === 'Contact'">
+      <span style="display:flex; align-items:center">
+                <!-- <ContactIcon /> -->
+                <MinichatIcon />
+                Contact
+            </span>
+      </NavLink>
+
+      <NavLink href="/test" :active="$page.component === 'Test'">
+      <span style="display:flex; align-items:center">
+                <!-- <TestIcon /> -->
+                <MinichatIcon />
+                Test
             </span>
       </NavLink>
 
