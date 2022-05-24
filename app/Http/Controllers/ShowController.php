@@ -22,6 +22,16 @@ class ShowController extends Controller
         ]);
     }
 
+    public function indexVue()
+    {
+        $shows = Show::all();
+
+        return inertia('Homepage',[
+        'shows' => $shows,
+        'resource' => 'spectacles'
+        ]);
+    }
+
     /**
      * Show the form for creating a new resource.
      *
