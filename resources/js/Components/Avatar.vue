@@ -22,7 +22,10 @@ export default {
 </script>
 
 <template>
-  <img
+
+  <div>
+    {{ username }}
+    <img
     @click = "showDropdown = !showDropdown"
     id="avatar"
     type="button"
@@ -32,6 +35,8 @@ export default {
     src="https://www.diethelmtravel.com/wp-content/uploads/2016/04/bill-gates-wealthiest-person.jpg"
     alt="User dropdown"
   />
+  </div>
+  
 
   <!-- Dropdown menu -->
   <div
@@ -46,11 +51,13 @@ export default {
       shadow
       w-44
       dark:bg-gray-700 dark:divide-gray-600
+      
     "
     v-show="showDropdown"
   >
     <ul
-      class="py-1 text-sm text-gray-700 dark:text-gray-200"
+      class="py-1 text-sm text-gray-700 dark:text-gray-200 divide-y
+      divide-red-200"
       aria-labelledby="dropdownInformationButton"
     >
       <li>
