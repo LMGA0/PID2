@@ -24,8 +24,8 @@ class ChatMessageEvent implements ShouldBroadcast
      */
     public function __construct(string $nickname, string $message)
     {
-        $this->$nickname = $nickname;
-        $this->$message = $message;
+        $this->nickname = $nickname;
+        $this->message = $message;
     }
 
     /**
