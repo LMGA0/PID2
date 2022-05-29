@@ -19,7 +19,7 @@ class RepresentationController extends Controller
     {
         $artists = Artist::all();
 
-        return inertia('representation_bis',[
+        return inertia('Representation_bis',[
             'artists' => $artists,
             'resource' => 'représentations',
         ]);
