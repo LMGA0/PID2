@@ -14,25 +14,23 @@ props: {
 <template>
     <Head title="Representation_bis" />
 
-<h1>Liste des représentations</h1>
+<h1>Liste des artistes</h1>
 
     <ul>
-        <tr>
-            <th>Firstname </th>
-            <th>Lastname</th>
-        </tr>
-      TEST
-        <li v-for="representation in representations">
-            
-            {{representation}}
-         </li>    
-        <li v-for="artist in artists">
-            
-            {{artist.firstname}}
-        
-            <!-- <a href="{{ route('artist_show', $artist in id) }}">{{ $artist in lastname }}</a> -->
-              
-        </li>
+        <table>
+           <thead>
+               <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+               </tr>
+           </thead>
+           <tbody>
+            <tr v-for="artist in artists">
+               <td>{{artist.firstname}}</td> 
+               <td>{{artist.lastname}}</td>
+            </tr> 
+            </tbody>
+    </table>
     </ul>
 
 

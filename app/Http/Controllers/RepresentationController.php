@@ -17,11 +17,9 @@ class RepresentationController extends Controller
      */
     public function indexVue()
     {
-        $representations = Representation::all();
         $artists = Artist::all();
 
         return inertia('representation_bis',[
-            'representations' => $representations,
             'artists' => $artists,
             'resource' => 'représentations',
         ]);

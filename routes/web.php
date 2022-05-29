@@ -25,11 +25,11 @@ Route::get('/homepage', function () {
     return inertia('Homepage');
 });
 
-//Route::get('/representation_bis', function () {
-//    return inertia('Representation_bis');
-//});
+Route::get('/representation_bis', function () {
+    return inertia('Representation_bis');
+});
 
-Route::get('/representation_bis', [RepresentationController::class, 'indexVue'])->name('representation_bis_show');
+//Route::get('/representation_bis', [RepresentationController::class, 'indexVue'])->name('representation_bis_show');
 
 Route::get('/shop', function () {
     return inertia('Shop');
