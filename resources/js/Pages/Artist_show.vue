@@ -12,9 +12,9 @@ props: {
 
 </script>
 <template>
-    <Head title="Representation_bis" />
+    <Head title="Fiche d'un artiste" />
 
-<h1>Liste des artistes</h1>
+<h1>Détail de l'artiste</h1>
 
     <ul>
         <table>
@@ -26,13 +26,16 @@ props: {
            </thead>
            <tbody>
             <tr v-for="artist in artists">
-               <td>{{artist.firstname}}</td> 
-             
-              <a href="/artist_show" :active="$page.component === 'Artist_show'"> <td>{{artist.lastname}}</td></a>
+               <td><h1>{{ artist.firstname }} {{ artist.lastname }}</h1></td> 
+              
             </tr> 
             </tbody>
     </table>
     </ul>
+
+
+    <!-- <nav><a href="{{ route('artist_index') }}">Retour à l'index</a></nav> -->
+
 
 
 

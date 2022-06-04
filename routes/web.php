@@ -24,7 +24,9 @@ Route::redirect('/', '/homepage');
 Route::get('/homepage', function () {
     return inertia('Homepage');
 });
-Route::get('/representation_bis', [RepresentationController::class, 'indexVue'])->name('representation_bis_show');
+Route::get('/representation_bis', [RepresentationController::class, 'indexVue']);
+
+Route::get('/artist_show', [ArtistController::class, 'showVue']);
 
 Route::get('/shop', function () {
     return inertia('Shop');
@@ -46,9 +48,9 @@ require __DIR__.'/auth.php';
 
 // Old routes with blade php instead of Vue.js
 
-Route::get('/artist', [ArtistController::class, 'index'])->name('artist_index');
-Route::get('/artist/{id}', [ArtistController::class, 'show'])
-	->where('id', '[0-9]+')->name('artist_show');
+//Route::get('/artist', [ArtistController::class, 'index'])->name('artist_index');
+//Route::get('/artist/{id}', [ArtistController::class, 'show'])
+//	->where('id', '[0-9]+')->name('artist_show');
 
 Route::get('/type', [TypeController::class, 'index'])->name('type_index');
 Route::get('/type/{id}', [TypeController::class, 'show'])
