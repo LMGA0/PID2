@@ -21,19 +21,10 @@ use App\Http\Controllers\ChatController;
 
 Route::redirect('/', '/homepage');
 
-<<<<<<< HEAD
 Route::get('/homepage', function () {
     return inertia('Homepage');
 });
 Route::get('/representation_bis', [RepresentationController::class, 'indexVue']);
-=======
-// Route::get('/homepage', function () {
-//     return inertia('Homepage');
-// });
-
-// Nouvelle methode avec controlleur (et donc recupération de données)
-Route::get('/homepage', [ShowController::class, 'indexVue'])->name('homepage_show');
->>>>>>> ca4215e859120f21679a4173389ca4e7143d5a57
 
 Route::get('/artist_show', [ArtistController::class, 'showVue']);
 
