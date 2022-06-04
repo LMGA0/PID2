@@ -17,6 +17,7 @@
         "@vue/compiler-sfc": "^3.2.31",
         "alpinejs": "^3.4.2",
         "autoprefixer": "^10.4.5",
+<<<<<<< HEAD
         "axios": "^0.21.4",
         "laravel-echo": "^1.11.7",
         "laravel-mix": "^6.0.6",
@@ -25,6 +26,17 @@
         "postcss-import": "^14.1.0",
         "postcss-nesting": "^10.1.6",
         "pusher-js": "^7.1.0-beta",
+=======
+        "axios": "^0.21",
+        "flowbite": "^1.4.5",
+        "laravel-mix": "^6.0.6",
+        "lodash": "^4.17.19",
+        "postcss": "^8.4.13",
+        "postcss-import": "^14.0.2",
+        "resolve-url-loader": "^5.0.0",
+        "sass": "^1.51.0",
+        "sass-loader": "^12.6.0",
+>>>>>>> ca4215e859120f21679a4173389ca4e7143d5a57
         "tailwindcss": "^3.0.24",
         "vue": "^3.2.31",
         "vue-loader": "^17.0.0"

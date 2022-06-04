@@ -3,8 +3,11 @@ require('./bootstrap');
 import { createApp, h } from 'vue';
 import { createInertiaApp } from '@inertiajs/inertia-vue3';
 import { InertiaProgress } from '@inertiajs/progress';
+<<<<<<< HEAD
 import axios from 'axios';
 
+=======
+>>>>>>> ca4215e859120f21679a4173389ca4e7143d5a57
 const appName = window.document.getElementsByTagName('title')[0]?.innerText || 'Laravel';
 
 createInertiaApp({

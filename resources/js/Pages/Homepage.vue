@@ -1,13 +1,22 @@
 <script>
 import Layout from "../Shared/Layout.vue"
+import CarouselExternalApi from "../Components/CarouselExternalApi.vue"
 
 export default {
+  components:{
+    CarouselExternalApi
+  },
+
   layout: Layout,
 
   computed: {
     username() {
       return this.$page.props.auth?.user?.name;
-    }
+    },
+  },
+  props: {
+    shows: Object,
+    resource: String
   }
 }
 
@@ -16,19 +25,17 @@ let x = [2.3,4]
 
 <template>
     <Head title="Homepage" />
+    <!-- <CarouselExternalApi /> -->
 
   <p>Bienvenue sur le site de partage d'informations sur les actualités théatrales.</p>
-  <h1 v-if="username">You are connected: {{username}}</h1>
-  <h1 v-else>YOU ARE NOT CONNECTED</h1>
-    <ul>
 
+  <h1> {{ resource }} </h1> 
+
+    <ul>
             <li v-for="show in shows">
                 {{show.title}}
-
             </li>
     </ul>
-
-
 
 </template>
 

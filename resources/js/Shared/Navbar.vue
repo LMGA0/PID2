@@ -1,9 +1,9 @@
 <template>
- <nav class="flex items-center justify-between flex-wrap bg-red-700 p-4">
+ <nav class="flex items-center justify-between flex-wrap bg-red-700 p-4 rounded-b-[14px]">
   <div class="flex items-center flex-shrink-0 text-white mr-6">
 
     <a href="/homepage" :active="$page.component === 'Homepage'"><ApplicationLogo class="w-10 mr-3" /></a>
-    <span class="font-semibold text-xl tracking-tight">Projet d'intégration de développement</span>
+    <span class="font-semibold text-xl tracking-tight ml-5">Projet d'intégration de développement</span>
   </div>
 
   <div class="block lg:hidden">
@@ -48,7 +48,8 @@
     </div>
     <div>
       <a v-if="!$page.props.auth.user" href="/login" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Se connecter / S'inscrire</a>
-      <p v-else class="text-white ">{{$page.props.auth.user.name}}</p>
+      <p v-else class="text-white "><Avatar /></p>
+      
     </div>
   </div>
 </nav>
@@ -64,6 +65,7 @@ import ShopIcon from '@/Icons/ShopIcon.vue'
 import NewsIcon from '@/Icons/NewsIcon.vue'
 import MinichatIcon from '@/Icons/MinichatIcon.vue'
 import NavLink from '@/Shared/NavLink'
+import Avatar from '@/Components/Avatar'
 
 
 </script>

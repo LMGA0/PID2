@@ -6,7 +6,11 @@ module.exports = {
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
         './resources/js/**/*.vue',
+<<<<<<< HEAD
         './src/**/*.{html,js}'
+=======
+        "./node_modules/flowbite/**/*.js"
+>>>>>>> ca4215e859120f21679a4173389ca4e7143d5a57
     ],
 
     theme: {
@@ -17,5 +21,5 @@ module.exports = {
         },
     },
 
-    plugins: [require('@tailwindcss/forms')],
+    plugins: [require('@tailwindcss/forms'), require('flowbite/plugin') ]
 };
