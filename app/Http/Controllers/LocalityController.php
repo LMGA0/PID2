@@ -22,6 +22,14 @@ class LocalityController extends Controller
         ]);
     }
 
+    public function indexAdminPanel()
+    {
+        return inertia('Admin/Localities',[
+        'localities' => Locality::all(),
+        'columns' => ['ID', 'Postal Code', 'Locality']
+        ]);
+    }
+
     /**
      * Show the form for creating a new resource.
      *

@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
-use App\Models\Artist;
 
-class ArtistController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,20 +14,14 @@ class ArtistController extends Controller
      */
     public function index()
     {
-        $artists = Artist::all();
-        
-        return view('artist.index',[
-            'artists' => $artists,
-            'resource' => 'artistes',
-        ]);
-
+        //
     }
 
     public function indexAdminPanel()
     {
-        return inertia('Admin/Artists',[
-        'artists' => Artist::all(),
-        'columns' => ['ID', 'Firstname', 'Lastname']
+        return inertia('Admin/Users',[
+        'users' => User::all(),
+        'columns' => ['ID', 'Name', 'Email']
         ]);
     }
 
@@ -55,26 +49,21 @@ class ArtistController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(User $user)
     {
-        $artist = Artist::find($id);
-        
-        return view('artist.show',[
-            'artist' => $artist,
-        ]);
-
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(User $user)
     {
         //
     }
@@ -83,10 +72,10 @@ class ArtistController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, User $user)
     {
         //
     }
@@ -94,10 +83,10 @@ class ArtistController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(User $user)
     {
         //
     }

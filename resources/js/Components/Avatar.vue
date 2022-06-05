@@ -75,7 +75,7 @@ export default {
       </li>
       <li>
         <a
-          href="#"
+          href="/adminpanel"
           class="
             block
             px-4
@@ -83,7 +83,7 @@ export default {
             hover:bg-gray-300
             dark:hover:bg-gray-600 dark:hover:text-white
           "
-          >Panneau admin (to do)</a
+          >Panneau admin</a
         >
       </li>
       <li>
