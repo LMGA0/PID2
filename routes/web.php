@@ -8,6 +8,7 @@ use App\Http\Controllers\LocalityController;
 use App\Http\Controllers\LocationController;
 use App\Http\Controllers\ShowController;
 use App\Http\Controllers\RepresentationController;
+use App\Http\Controllers\UserController;
 use Inertia\Inertia;
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +20,18 @@ use Inertia\Inertia;
 */
 
 Route::redirect('/', '/homepage');
+
+Route::redirect('/adminpanel', '/adminpanel/artists');
+
+Route::get('/adminpanel/artists', [ArtistController::class, 'indexAdminPanel']);
+
+Route::get('/adminpanel/localities', [LocalityController::class, 'indexAdminPanel']);
+
+Route::get('/adminpanel/locations', [LocationController::class, 'indexAdminPanel']);
+
+Route::get('/adminpanel/shows', [ShowController::class, 'indexAdminPanel']);
+
+Route::get('/adminpanel/users', [UserController::class, 'indexAdminPanel']);
 
 // Route::get('/homepage', function () {
 //     return inertia('Homepage');

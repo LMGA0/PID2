@@ -20,6 +20,23 @@ class LocationController extends Controller
             'resource' => 'lieux',
         ]);
     }
+
+    public function indexAdminPanel()
+    {
+        $locations = Location::all();
+        $localitiesOfLocations = [];
+
+        foreach ($locations as $location){
+            array_push($localitiesOfLocations, $location->locality);
+        }
+
+        return inertia('Admin/Locations',[
+        'locations' => $locations,
+        'columns' => ['ID', 'Slug', 'Désignation', 'Adresse', 'Locality'],
+        'localitiesOfLocations' => $localitiesOfLocations
+        ]);
+    }
+
 /**
      * Show the form for creating a new resource.
      *

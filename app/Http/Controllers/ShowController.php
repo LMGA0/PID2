@@ -22,6 +22,23 @@ class ShowController extends Controller
         ]);
     }
 
+    public function indexAdminPanel()
+    {
+
+        $shows = Show::all();
+        $locationsOfShows = [];
+
+        foreach ($shows as $show){
+            array_push($locationsOfShows, $show->location);
+        }
+
+        return inertia('Admin/Shows',[
+        'shows' => $shows,
+        'columns' => ['ID', 'Slug', 'Titre', 'Déscription', 'Location', 'Réservable', 'Prix'],
+        'locationsOfShows' => $locationsOfShows
+        ]);
+    }
+
     public function indexVue()
     {
         $shows = Show::all();
