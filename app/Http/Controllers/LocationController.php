@@ -23,9 +23,17 @@ class LocationController extends Controller
 
     public function indexAdminPanel()
     {
+        $locations = Location::all();
+        $localitiesOfLocations = [];
+
+        foreach ($locations as $location){
+            array_push($localitiesOfLocations, $location->locality);
+        }
+
         return inertia('Admin/Locations',[
-        'locations' => Location::all(),
-        'columns' => ['ID', 'Slug', 'Désignation', 'Adresse']
+        'locations' => $locations,
+        'columns' => ['ID', 'Slug', 'Désignation', 'Adresse', 'Locality'],
+        'localitiesOfLocations' => $localitiesOfLocations
         ]);
     }
 

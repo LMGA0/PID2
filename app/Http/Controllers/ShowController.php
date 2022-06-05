@@ -24,9 +24,18 @@ class ShowController extends Controller
 
     public function indexAdminPanel()
     {
+
+        $shows = Show::all();
+        $locationsOfShows = [];
+
+        foreach ($shows as $show){
+            array_push($locationsOfShows, $show->location);
+        }
+
         return inertia('Admin/Shows',[
-        'shows' => Show::all(),
-        'columns' => ['ID', 'Slug', 'Titre', 'Déscription', 'Location', 'Réservable', 'Prix']
+        'shows' => $shows,
+        'columns' => ['ID', 'Slug', 'Titre', 'Déscription', 'Location', 'Réservable', 'Prix'],
+        'locationsOfShows' => $locationsOfShows
         ]);
     }
 
