@@ -2,7 +2,7 @@
     <Link
         class="block mt-4 lg:inline-block lg:mt-0 text-white 
         hover:border-transparent hover:text-red-600 hover:bg-white hover:rounded mr-4" 
-        :class="{'font-bold underline': active}"
+        :class="{'font-bold': active}"
     >
         <slot />
     </Link>

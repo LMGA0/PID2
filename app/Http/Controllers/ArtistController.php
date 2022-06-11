@@ -23,6 +23,14 @@ class ArtistController extends Controller
 
     }
 
+    public function indexAdminPanel()
+    {
+        return inertia('Admin/Artists',[
+        'artists' => Artist::all(),
+        'columns' => ['ID', 'Firstname', 'Lastname']
+        ]);
+    }
+
     /**
      * Show the form for creating a new resource.
      *

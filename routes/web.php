@@ -8,6 +8,7 @@ use App\Http\Controllers\LocalityController;
 use App\Http\Controllers\LocationController;
 use App\Http\Controllers\ShowController;
 use App\Http\Controllers\RepresentationController;
+use App\Http\Controllers\UserController;
 use Inertia\Inertia;
 /*
 |--------------------------------------------------------------------------
@@ -20,9 +21,24 @@ use Inertia\Inertia;
 
 Route::redirect('/', '/homepage');
 
-Route::get('/homepage', function () {
-    return inertia('Homepage');
-});
+Route::redirect('/adminpanel', '/adminpanel/artists');
+
+Route::get('/adminpanel/artists', [ArtistController::class, 'indexAdminPanel']);
+
+Route::get('/adminpanel/localities', [LocalityController::class, 'indexAdminPanel']);
+
+Route::get('/adminpanel/locations', [LocationController::class, 'indexAdminPanel']);
+
+Route::get('/adminpanel/shows', [ShowController::class, 'indexAdminPanel']);
+
+Route::get('/adminpanel/users', [UserController::class, 'indexAdminPanel']);
+
+// Route::get('/homepage', function () {
+//     return inertia('Homepage');
+// });
+
+// Nouvelle methode avec controlleur (et donc recupération de données)
+Route::get('/homepage', [ShowController::class, 'indexVue'])->name('homepage_show');
 
 Route::get('/representation_bis', function () {
     return inertia('Representation_bis');
@@ -69,6 +85,7 @@ Route::get('location/{id}', [LocationController::class, 'show'])
 	->where('id', '[0-9]+')->name('location_show');	
 
 Route::get('/show', [ShowController::class, 'index'])->name('show_index');
+
 Route::get('/show/{id}', [ShowController::class, 'show'])
 	->where('id', '[0-9]+')->name('show_show');	
 

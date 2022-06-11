@@ -11,17 +11,23 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+        <link href="/css/app.css" rel="stylesheet">
+        <script src="https://unpkg.com/flowbite@1.4.5/dist/flowbite.js"></script>
 
         <!-- Scripts -->
         @routes
         <script src="{{ mix('js/app.js') }}" defer></script>
+        
         @inertiaHead
     </head>
     <body class="font-sans antialiased">
         @inertia
 
         @env ('local')
+        <script src="https://unpkg.com/flowbite@1.4.5/dist/flowbite.js"></script>
             <script src="http://localhost:8080/js/bundle.js"></script>
+            
         @endenv
+        
     </body>
 </html>
