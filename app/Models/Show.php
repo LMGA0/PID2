@@ -21,6 +21,7 @@ class Show extends Model
     'location_id',
     'bookable',
     'price',
+    'category_id',
 ];
 
    /**
@@ -52,5 +53,13 @@ class Show extends Model
     {
       return $this->hasMany(Representation::class);
     }
+
+    /**
+     * Get the main category of the show
+     */
+    public function category()
+   {
+       return $this->belongsTo(Category::class);
+   } 
 }
 

@@ -44,5 +44,7 @@
         @endif
     </article>
 
+    <div><a href="{{ route('show.edit' ,$show->id) }}">Modifier</a></div>
+
     <nav><a href="{{ route('show_index') }}">Retour à l'index</a></nav>
     @endsection

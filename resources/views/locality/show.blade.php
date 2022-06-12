@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Localité d\'un artiste')
+@section('title', 'Localité')
 
 @section('content')
     <h1>{{ ucfirst($locality->locality) }} {{ ucfirst($locality->postal_code) }}</h1>

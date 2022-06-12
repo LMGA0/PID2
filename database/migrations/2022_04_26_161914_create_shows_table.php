@@ -24,8 +24,11 @@ class CreateShowsTable extends Migration
             $table->decimal('price',10,2)->nullable();
             $table->timestamp('create_at')->useCurrent();
             $table->timestamp('update_at')->nullable();
+            $table->foreignId('category_id')->default(1);
 
             $table->foreign('location_id')->references('id')->on('locations')
+            ->onDelete('restrict')->onUpdate('cascade');
+            $table->foreign('category_id')->references('id')->on('category')
             ->onDelete('restrict')->onUpdate('cascade');
         });
     }

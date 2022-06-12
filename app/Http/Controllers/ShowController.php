@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Show;
+use App\Models\Category;
 
 class ShowController extends Controller
 {
@@ -92,7 +93,12 @@ class ShowController extends Controller
      */
     public function edit($id)
     {
-        //
+        $show = Show::find($id);
+        
+        return view('show.edit',[
+            'show' => $show,
+        ]);
+
     }
 
     /**
@@ -104,7 +110,21 @@ class ShowController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        //Validation des données du formulaire
+        $validated = $request->validate([
+            'category_id' => 'required|max:20',
+        ]);
+
+	   //Le formulaire a été validé, nous récupérons le show à modifier
+        $show = Show::find($id);
+
+	   //Mise à jour des données modifiées et sauvegarde dans la base de données
+        $show->update($validated);
+
+        return view('show.show',[
+            'show' => $show,
+        ]);
+
     }
 
     /**

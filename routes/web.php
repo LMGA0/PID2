@@ -9,6 +9,7 @@ use App\Http\Controllers\LocationController;
 use App\Http\Controllers\ShowController;
 use App\Http\Controllers\RepresentationController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\CategoryController;
 use Inertia\Inertia;
 /*
 |--------------------------------------------------------------------------
@@ -85,10 +86,18 @@ Route::get('location/{id}', [LocationController::class, 'show'])
 	->where('id', '[0-9]+')->name('location_show');	
 
 Route::get('/show', [ShowController::class, 'index'])->name('show_index');
-
 Route::get('/show/{id}', [ShowController::class, 'show'])
-	->where('id', '[0-9]+')->name('show_show');	
+	->where('id', '[0-9]+')->name('show_show');
+// Route::get('/show/edit/{id}', [App\Http\Controllers\ShowController::class, 'edit'])
+// 	->where('id', '[0-9]+')->category_id('show.edit');
+// Route::put('/show/{id}', [App\Http\Controllers\ShowController::class, 'update'])
+// 	->where('id', '[0-9]+')->category_id('show.update');
+
 
 Route::get('/representation', [RepresentationController::class, 'index'])->name('representation_index');
 Route::get('/representation/{id}', [RepresentationController::class, 'show'])
-	->where('id', '[0-9]+')->name('representation_show');		
+	->where('id', '[0-9]+')->name('representation_show');
+	
+Route::get('/category', [CategoryController::class, 'index'])->name('category_index');
+Route::get('/category/{id}', [CategoryController::class, 'show'])
+	->where('id', '[0-9]+')->name('category_show');
