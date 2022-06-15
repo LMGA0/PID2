@@ -33,7 +33,7 @@ class Category extends Model
     /**
      * Get the show for this category
      */
-    public function show()
+    public function shows()
     {
       return $this->hasMany(Show::class);
     }

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AgenciesController;
 use App\Http\Controllers\ArtistController;
 use App\Http\Controllers\TypeController;
 use App\Http\Controllers\RoleController;
@@ -68,6 +69,10 @@ require __DIR__.'/auth.php';
 Route::get('/artist', [ArtistController::class, 'index'])->name('artist_index');
 Route::get('/artist/{id}', [ArtistController::class, 'show'])
 	->where('id', '[0-9]+')->name('artist_show');
+Route::get('artist/edit/{id}', [ArtistController::class, 'edit'])
+	->where('id', '[0-9]+')->name('artist_edit');
+Route::put('artist/update/{id}', [ArtistController::class, 'update'])
+	->where('id', '[0-9]+')->name('artist_update');
 
 Route::get('/type', [TypeController::class, 'index'])->name('type_index');
 Route::get('/type/{id}', [TypeController::class, 'show'])
@@ -88,11 +93,15 @@ Route::get('location/{id}', [LocationController::class, 'show'])
 Route::get('/show', [ShowController::class, 'index'])->name('show_index');
 Route::get('/show/{id}', [ShowController::class, 'show'])
 	->where('id', '[0-9]+')->name('show_show');
-// Route::get('/show/edit/{id}', [App\Http\Controllers\ShowController::class, 'edit'])
-// 	->where('id', '[0-9]+')->category_id('show.edit');
-// Route::put('/show/{id}', [App\Http\Controllers\ShowController::class, 'update'])
-// 	->where('id', '[0-9]+')->category_id('show.update');
+Route::get('/show/edit/{id}', [ShowController::class, 'edit'])
+	->where('id', '[0-9]+')->name('show.edit');
+Route::get('/show/update/{id}', [ShowController::class, 'update'])
+	->where('id', '[0-9]+')->name('show.update');
 
+Route::get('/agencies', [AgenciesController::class, 'index'])->name('agencies_index');
+Route::get('agencies/{id}', [AgenciesController::class, 'show'])
+	->where('id', '[0-9]+')->name('agencies_show');
+	
 
 Route::get('/representation', [RepresentationController::class, 'index'])->name('representation_index');
 Route::get('/representation/{id}', [RepresentationController::class, 'show'])

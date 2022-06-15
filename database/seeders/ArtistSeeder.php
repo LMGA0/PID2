@@ -21,19 +21,22 @@ class ArtistSeeder extends Seeder
         
                 //Define data
                $artists = [
-                    ['firstname'=>'Daniel','lastname'=>'Marcelin'],
-                    ['firstname'=>'Philippe','lastname'=>'Laurent'],
-                    ['firstname'=>'Marius','lastname'=>'Von Mayenburg'],
-                    ['firstname'=>'Olivier','lastname'=>'Boudon'],
-                    ['firstname'=>'Anne Marie','lastname'=>'Loop'],
-                    ['firstname'=>'Pietro','lastname'=>'Varasso'],
-                    ['firstname'=>'Laurent','lastname'=>'Caron'],
-                    ['firstname'=>'Élena','lastname'=>'Perez'],
-                    ['firstname'=>'Guillaume','lastname'=>'Alexandre'],
-                    ['firstname'=>'Claude','lastname'=>'Semal'],
-                    ['firstname'=>'Laurence','lastname'=>'Warin'],
-                    ['firstname'=>'Pierre','lastname'=>'Wayburn'],
-                    ['firstname'=>'Gwendoline','lastname'=>'Gauthier'],
+                    ['firstname'=>'Daniel','lastname'=>'Marcelin','agencies_id'=>NULL],
+                    ['firstname'=>'Philippe','lastname'=>'Laurent','agencies_id'=>NULL],
+                    ['firstname'=>'Marius','lastname'=>'Von Mayenburg','agencies_id'=>NULL],
+                    ['firstname'=>'Olivier','lastname'=>'Boudon','agencies_id'=>NULL],
+                    ['firstname'=>'Anne Marie','lastname'=>'Loop','agencies_id'=>NULL],
+                    ['firstname'=>'Pietro','lastname'=>'Varasso','agencies_id'=>NULL],
+                    ['firstname'=>'Laurent','lastname'=>'Caron','agencies_id'=>NULL],
+                    ['firstname'=>'Élena','lastname'=>'Perez','agencies_id'=>NULL],
+                    ['firstname'=>'Guillaume','lastname'=>'Alexandre','agencies_id'=>NULL],
+                    ['firstname'=>'Claude','lastname'=>'Semal','agencies_id'=>NULL],
+                    ['firstname'=>'Laurence','lastname'=>'Warin','agencies_id'=>NULL],
+                    ['firstname'=>'Pierre','lastname'=>'Wayburn','agencies_id'=>NULL],
+                    ['firstname'=>'Gwendoline','lastname'=>'Gauthier','agencies_id'=>NULL],
+                    ['firstname'=>'Bob','lastname'=>'Sull','agencies_id'=>'1'],
+                    ['firstname'=>'Lidya','lastname'=>'Smith','agencies_id'=>'1'],
+                    ['firstname'=>'Fred','lastname'=>'Durand','agencies_id'=>'2'],
                 ];
                 
                 //Insert data in the table
